@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História da Ferrari</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      color: #ff2800;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #2a2a2a;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(255, 40, 0, 0.2);
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .year {
+      color: #ff2800;
+      font-weight: bold;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .card-text {
+      color: #ccc;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+
+    .badge {
+      align-self: flex-start;
+      margin-top: 1.5rem;
+      background-color: #ff2800;
+      color: #fff;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>História Ferrari</h1>
+    <p>Seis modelos lendários que marcaram a trajetória do Cavallino Rampante</p>
+  </header>
+
+  <main class="container">
+
+    <article class="card">
+      <div class="card-body">
+        <span class="year">1947</span>
+        <h2 class="card-title">Ferrari 125 S</h2>
+        <p class="card-text">O primeiro automóvel a carregar oficialmente o nome de Enzo Ferrari. Equipado com um motor V12 de 1,5 litro projetado por Gioachino Colombo, estreou no circuito de Piacenza e conquistou a primeira vitória da marca no Grande Prêmio de Roma no mesmo ano.</p>
+        <span class="badge">O Primeiro Modelo</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <span class="year">1962</span>
+        <h2 class="card-title">Ferrari 250 GTO</h2>
+        <p class="card-text">Projetado para competir na categoria de Gran Turismo, foram produzidas apenas 36 unidades. Com motor V12 de 300 cv, tornou-se um dos carros de corrida mais bem-sucedidos da história e o automóvel de coleção mais valioso do mundo.</p>
+        <span class="badge">Lenda das Pistas</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <span class="year">1987</span>
+        <h2 class="card-title">Ferrari F40</h2>
+        <p class="card-text">Criada para comemorar os 40 anos da fabricante, foi o último modelo pessoalmente aprovado por Enzo Ferrari. Utilizando kevlar e fibra de carbono, alcançava 324 km/h com seu V2.9 Twin-Turbo, sendo o carro de produção mais rápido de sua época.</p>
+        <span class="badge">Legado do Fundador</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <span class="year">2002</span>
+        <h2 class="card-title">Ferrari Enzo</h2>
+        <p class="card-text">Desenvolvida com tecnologias diretas da Formula 1, como a transmissão sequencial, freios de carbono-cerâmica e aerodinâmica ativa. Limitada a 400 unidades, homenageou o fundador carregando seu próprio nome.</p>
+        <span class="badge">Tecnologia de F1</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <span class="year">2013</span>
+        <h2 class="card-title">LaFerrari</h2>
+        <p class="card-text">O primeiro hipercarro com sistema híbrido HY-KERS da marca. Combinou um motor V6.3 de 800 cv a um motor elétrico de 163 cv, resultando em 963 cv no total e estabelecendo um novo patamar de desempenho em Maranello.</p>
+        <span class="badge">A Era Híbrida</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <span class="year">2019</span>
+        <h2 class="card-title">Ferrari SF90 Stradale</h2>
+        <p class="card-text">Celebrando os 90 anos da Scuderia Ferrari, foi o primeiro modelo híbrido plug-in (PHEV) de série da marca. Com motor V8 e três motores elétricos, gera 1.000 cv e conta com tração integral, unindo inovação e performance extrema.</p>
+        <span class="badge">Hipercarro PHEV</span>
+      </div>
+    </article>
+
+  </main>
+
+</body>
+</html>
