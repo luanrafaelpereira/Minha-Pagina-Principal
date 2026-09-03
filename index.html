@@ -19,28 +19,28 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    /* Estilos do Botão de Alternância */
+    /* Botão flutuante fixado no canto inferior direito */
     .theme-toggle-btn {
       position: fixed;
-      top: 1rem;
-      right: 1rem;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
       background-color: #ff2800;
       color: #ffffff;
       border: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 20px;
-      font-weight: 600;
+      padding: 0.8rem 1.2rem;
+      border-radius: 30px;
+      font-weight: bold;
       cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
       transition: transform 0.2s ease, background-color 0.3s ease;
-      z-index: 1000;
     }
 
     .theme-toggle-btn:hover {
-      transform: scale(1.05);
+      transform: scale(1.08);
     }
 
-    /* Regras para o Modo Claro */
+    /* Regras do Modo Claro */
     body.light-mode {
       background-color: #f4f4f6;
       color: #1a1a1a;
@@ -67,7 +67,6 @@
     header {
       text-align: center;
       margin-bottom: 3rem;
-      margin-top: 1rem;
     }
 
     header h1 {
