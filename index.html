@@ -16,11 +16,58 @@
       background-color: #121212;
       color: #f1f1f1;
       padding: 2rem 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Estilos do Botão de Alternância */
+    .theme-toggle-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: #ff2800;
+      color: #ffffff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .theme-toggle-btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Regras para o Modo Claro */
+    body.light-mode {
+      background-color: #f4f4f6;
+      color: #1a1a1a;
+    }
+
+    body.light-mode header p {
+      color: #555555;
+    }
+
+    body.light-mode .card {
+      background-color: #ffffff;
+      border-color: #e0e0e0;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    body.light-mode .card-title {
+      color: #111111;
+    }
+
+    body.light-mode .card-text {
+      color: #444444;
     }
 
     header {
       text-align: center;
       margin-bottom: 3rem;
+      margin-top: 1rem;
     }
 
     header h1 {
@@ -49,7 +96,7 @@
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
       border: 1px solid #2a2a2a;
       display: flex;
       flex-direction: column;
@@ -101,6 +148,8 @@
   </style>
 </head>
 <body>
+
+  <button id="theme-toggle" class="theme-toggle-btn">☀️ Modo Claro</button>
 
   <header>
     <h1>História Ferrari</h1>
@@ -164,6 +213,20 @@
     </article>
 
   </main>
+
+  <script>
+    const themeBtn = document.getElementById('theme-toggle');
+
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+
+      if (document.body.classList.contains('light-mode')) {
+        themeBtn.textContent = '🌙 Modo Escuro';
+      } else {
+        themeBtn.textContent = '☀️ Modo Claro';
+      }
+    });
+  </script>
 
 </body>
 </html>
